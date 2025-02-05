@@ -102,31 +102,59 @@ nav ul li a:hover {
     color: #2C3E50;
 }
 
-/* Proyectos */
+/* Sección Proyectos */
 .projects-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .project-card {
-    background: #EAEAEA;
-    padding: 20px;
+    background: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .project-card h3 {
+    margin: 10px 0;
     color: #2C3E50;
-    font-size: 22px;
 }
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #2C3E50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #1A252F;
+}
+
 
 /* Sección Tecnologías */
 .tech-container {
@@ -230,6 +258,51 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+/* Estilos para la sección de experiencias */
+#experiencias {
+    background-color: #fff; /* Fondo blanco */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#experiencias h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.experiences-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.experience-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
 
 
 
