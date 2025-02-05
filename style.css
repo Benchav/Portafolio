@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #F4F4F4;
+    color: #333333;
+    text-align: center;
+}
+
+/* Barra de navegación */
+nav {
+    background: #2C3E50;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C9A227;
+}
+
+/* Hero (Encabezado principal) */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #2C3E50, #34495E);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero span {
+    color: #C9A227;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    background: #C9A227;
+    color: #333333;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #A88B1D;
+}
+
+/* Secciones generales */
+.section {
+    padding: 80px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Proyectos */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #EAEAEA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #2C3E50;
+    font-size: 22px;
+}
+
+/* Sección de contacto */
+.contact-section {
+    background: #2C3E50;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 0;
+}
+
+.contact-section .btn {
+    background: #C9A227;
+    color: #333333;
+}
+
+/* Footer */
+footer {
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Sección de redes sociales */
+.social-links {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-links h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Botones de redes sociales */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #EAEAEA;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Colores específicos para cada red social */
+.github { background: #333; color: white; }
+.linkedin { background: #0077b5; color: white; }
+.twitter { background: #1DA1F2; color: white; }
+
+.github:hover { background: #222; transform: scale(1.05); }
+.linkedin:hover { background: #005582; transform: scale(1.05); }
+.twitter:hover { background: #0d8af0; transform: scale(1.05); }
