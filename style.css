@@ -11,6 +11,7 @@ body {
     background-color: #F4F4F4;
     color: #333333;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Barra de navegación */
@@ -140,7 +141,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.btn {
+.project-card .btn {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
@@ -151,10 +152,9 @@ nav ul li a:hover {
     transition: background 0.3s ease-in-out;
 }
 
-.btn:hover {
+.project-card .btn:hover {
     background: #1A252F;
 }
-
 
 /* Sección Tecnologías */
 .tech-container {
@@ -197,7 +197,6 @@ nav ul li a:hover {
     height: 24px;
 }
 
-
 /* Sección de contacto */
 .contact-section {
     background: #2C3E50;
@@ -218,7 +217,6 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
-
 
 /* Sección de redes sociales */
 .social-links {
@@ -302,9 +300,6 @@ footer {
     font-size: 1rem;
     color: #555;
 }
-
-
-
 
 /* Colores específicos para cada red social */
 .github { background: #333; color: white; }
